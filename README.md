@@ -15,3 +15,18 @@ A Telegram bot for quick due diligence on **Cardano native tokens**: tokenomics,
 - Choose your data source: self-hosted node/db-sync, or Blockfrost/Koios
 
 ## Quick demo (commands)
+/scan <policy_or_asset_id>
+/score <policy_or_asset_id>
+/holders <policy_or_asset_id>
+/liquidity <policy_or_asset_id>
+/help
+
+## Quick start
+> Requirements: Node.js 18+, npm, and a Cardano data source (self-host `cardano-node + db-sync`/Ogmios, or use Blockfrost/Koios).
+
+```bash
+git clone https://github.com/<your-org>/<your-repo>.git
+cd <your-repo>
+cp .env.example .env
+npm install
+npm run dev
